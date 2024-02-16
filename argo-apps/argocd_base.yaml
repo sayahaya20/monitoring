@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sayahaya20/monitoring/argo-apps
     targetRevision: main
-    path: Argo-apps
+    path: argo-apps
   syncPolicy:
     automated:
       prune: true
