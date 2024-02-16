@@ -9,7 +9,7 @@ spec:
     namespace: argocd
   project: default
   source:
-    repoURL: https://github.com/sayahaya20/monitoring/argo-apps
+    repoURL: https://github.com/sayahaya20/monitoring.git
     targetRevision: main
     path: argo-apps
   syncPolicy:
