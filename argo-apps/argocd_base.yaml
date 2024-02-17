@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-application
+  namespace: argocd
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: micro
+  project: default
+  source:
+    repoURL: https://github.com/sayahaya20/monitoring.git
+    targetRevision: HEAD
+    path: argo-apps
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
