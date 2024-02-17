@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/sayahaya20/monitoring.git
     targetRevision: main
-    path: argo-apps
+    path: my-todo
   syncPolicy:
     automated:
       prune: true
