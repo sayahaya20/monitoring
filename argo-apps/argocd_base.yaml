@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/sayahaya20/monitoring.git
-    targetRevision: main
+    targetRevision: HEAD
     path: argo-apps
   syncPolicy:
     automated:
