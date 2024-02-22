@@ -6,13 +6,15 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: micro
   project: default
   source:
     repoURL: https://github.com/sayahaya20/monitoring.git
     targetRevision: main
     path: argo-apps
   syncPolicy:
+    syncOptions: 
+    - CreateNamespace=true
     automated:
       prune: true
       selfHeal: true
