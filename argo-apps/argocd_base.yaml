@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-cd
+  name: argocd
   namespace: argocd
 spec:
   destination:
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/sayahaya20/monitoring.git
-    targetRevision: HEAD
+    targetRevision: main
     path: argo-apps
   syncPolicy:
     automated:
